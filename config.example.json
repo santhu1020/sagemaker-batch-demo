@@ -1,0 +1,12 @@
+{
+  "region": "us-east-1",
+  "model_name": "iris-batch-model",
+  "image_uri": "123456789012.dkr.ecr.us-east-1.amazonaws.com/iris-batch-inference:latest",
+  "model_data_url": "s3://YOUR_BUCKET_NAME/model/model.tar.gz",
+  "role_arn": "arn:aws:iam::123456789012:role/SageMakerBatchExecutionRole",
+  "input_s3": "s3://YOUR_BUCKET_NAME/batch-input/input.jsonl",
+  "output_s3": "s3://YOUR_BUCKET_NAME/batch-output/",
+  "instance_type": "ml.m5.large",
+  "instance_count": 1,
+  "poll_seconds": 30
+}
